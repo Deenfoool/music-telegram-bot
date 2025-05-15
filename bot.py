@@ -74,7 +74,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
     chat_id = update.effective_chat.id
 
-    if re.search(r'@F3o1Bot\s+vkmus', text, re.IGNORECASE):
+    if re.search(r'@F3olBot\s+vkmus', text, re.IGNORECASE):
         match = re.search(r'vkmus\s+(.+)', text, re.IGNORECASE)
         if match:
             query = match.group(1).strip()
